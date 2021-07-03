@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Self-Check</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html" target="_self">Covid Suraksha</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="about.html" target="_self">About</a></li>
+                <li class="active"><a href="self-check.html" target="_self">Self-Check</a></li>
+                <li><a href="vaccination.html" target="_self">Get Vaccinated</a></li>
+                <li><a href="checkhospitals.html" target="_self">View Doctors</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Booking<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bookbed.html" target="_self">Bed</a></li>
+                        <li><a href="bookambulance.html" target="_self">Ambulance</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" style="font-size: 20px;">
+        <p>The purpose of the Coronavirus Self-Checker is to help you make decisions about seeking appropriate medical
+            care. This system is not intended for the diagnosis or treatment of disease, including COVID-19.
+
+            This project was made possible through a partnership with the CDC Foundation and is enabled by Microsoft’s
+            Azure platform. CDC’s collaboration with a non-federal organization does not imply an endorsement of any one
+            particular service, product, or enterprise.
+
+            To continue using this tool, please agree that you have read and understood the contents of this disclaimer.
+        </p>
+        </div>
+        <div class="container" style="width: 90%; margin: auto; font-size: 20px;">
+            <h2>Symptoms Check</h2>
+            <form action="">
+
+                <table class="table table-striped table-responsive">
+                    <tr>
+                        <td>What is your age?</td>
+                        <td>
+                            <select name="age">
+                                <option value="sya">Select Your Age</option>
+                                <option value="2-18">2-18</option>
+                                <option value="19-40">19-40</option>
+                                <option value="41-60">41-60</option>
+                                <option value="61-100">61-100</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            What is your gender?
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="nts"> I prefer not to say
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Do you have any of these<br>
+                            life-threatening symptoms?
+                        </td>
+                        <td>
+                            <input type="text" list="symptoms" name="symptoms" autocomplete="off">
+                            <datalist id="symptoms">
+                                <option value="No"></option>
+                                <option value="Pale, gray, or blue-colored skin, lips, or nail beds"></option>
+                                <option value="Severe and constant pain or pressure in the chest"></option>
+                                <option value="Difficulty breathing"></option>
+                                <option value="New disorientation (acting confused"></option>
+                                <option value="Unconscious or very difficult to wake up"></option>
+                                <option value="Slurred speech or difficulty speaking (new or worsening)"></option>
+
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Are you feeling sick?</td>
+                        <td>
+                            <select name="sick">
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                                <option value="idk">I don’t know</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            In the last two weeks, have you been<br> in close contact with someone who<br> has COVID-19?
+                        </td>
+                        <td>
+                            <select name="contact">
+                                <option value="no">No</option>
+                                <option value="yes">Yes</option>
+                                <option value="idk">I don’t know</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="reset" value="Reset"> <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+        <div class="container-fluid" style="font-size: 20px;">
+            <p>
+                If you are experiencing a life-threatening emergency, please call 911 immediately.<br>
+
+                If you are not experiencing a life-threatening emergency, let’s get started.<br>
+
+
+                CDC recommends these steps to reduce your risk of getting and spreading COVID-19:<br>
+            <ul style="list-style-type: circle;">
+                <li><strong>Get a COVID-19 vaccine</strong> as soon as you are eligible. Continue to follow the steps
+                    below
+                    every day until you
+                    are fully vaccinated.*</li>
+                <li> <strong>Wear</strong> a mask over your nose and mouth.*</li>
+                <li><strong>Stay</strong> at least 6 feet away from people who don’t live with you.*</li>
+                <li><strong>Avoid</strong> crowded areas and poorly ventilated spaces.*</li>
+                <li><strong>Wash</strong> your hands often with soap and water, or use hand sanitizer with at least 60%
+                    alcohol.</li>
+            </ul>
+            <small>*Fully vaccinated people (those at least 2 weeks past their final dose) can resume activities without
+                wearing a mask or physically distancing, except where required by federal, state, local, tribal, or
+                territorial laws, rules, and regulations, including local business and workplace guidance.</small>
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid text-center"
+        style="height: auto; background-color: rgb(20, 20, 71); margin-top: 10px;color: white;">
+        <div class="row">
+            <div class="col-sm-6" style="padding:15px;">For Grievances & Feedback</div>
+            <div class="col-sm-6" style="padding:15px;">Copyright © 2021 COWIN. All Rights Reserved</div>
+        </div>
+    </div>
+</body>
+
+</html>

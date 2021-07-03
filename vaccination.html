@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Get Vaccinated</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html" target="_self">Covid Suraksha</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="about.html" target="_self">About</a></li>
+                <li><a href="self-check.html" target="_self">Self-Check</a></li>
+                <li class="active"><a href="vaccination.html" target="_self">Get Vaccinated</a></li>
+                <li><a href="checkhospitals.html" target="_self">View Doctors</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Booking<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bookbed.html" target="_self">Bed</a></li>
+                        <li><a href="bookambulance.html" target="_self">Ambulance</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <img class="img-responsive" src="/images/get-vaccinated.jpg" alt="get-vaccinated" width="70%" style="margin: auto;">
+    <div class="container-fluid" style="margin:20px;border:2px solid red; border-radius: 50px; padding:30px;">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Full Name:</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="aadhar">Aadhaar Number:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="aadhar" placeholder="Enter your aadhaar number"
+                        name="aadhar">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="age">Age:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="gender">Gender:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" name="gender" id="gender">
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="frmale">Female</option>
+                        <option value="nts">I prefer not to say</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter your password" name="pwd">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container-fluid">
+        <h1 style="text-align: center;">10 Reasons to get Vaccinated</h1>
+        <hr>
+        <ol style="font-size: 20px;">
+            <li>
+                <p><strong>Vaccine-preventable diseases have not gone away</strong>
+                    <br>
+                    The viruses and bacteria that cause illness and death still exist and can be passed on to those who
+                    are not protected by vaccines. While many diseases are not common in the US, global travel makes it
+                    easy for diseases to spread.
+                </p>
+            </li>
+
+            <li>
+                <p><strong>Vaccines will help keep you healthy</strong>
+                    <br>
+                    The Centers for Disease Control and Prevention (CDC) recommends vaccinations throughout your life to
+                    protect against many infections. When you skip vaccines, you leave yourself vulnerable to illnesses
+                    such as shingles, pneumococcal disease, flu, and HPV and hepatitis B, both leading causes of cancer.
+                </p>
+            </li>
+
+            <li>
+                <p><strong>Vaccines are as important to your overall health as diet and exercise</strong>
+                    <br>
+                    Like eating healthy foods, exercising, and getting regular check-ups, vaccines play a vital role in
+                    keeping you healthy. Vaccines are one of the most convenient and safest preventive care measures
+                    available.
+                </p>
+            </li>
+
+            <li>
+                <p><strong>Vaccination can mean the difference between life and death</strong>
+                    <br>
+                    Vaccine-preventable infections can be deadly. Every year in the US, prior to the COVID-19 pandemic,
+                    approximately 50,000 adults died from vaccine-preventable diseases.
+                </p>
+            </li>
+
+            <li>
+                <p><strong>Vaccines are safe</strong>
+                    <br>
+                    The US has a robust approval process to ensure that all licensed vaccines are safe. Potential side
+                    effects associated with vaccines are uncommon and much less severe than the diseases they prevent.
+                </p>
+            </li>
+
+            <li>
+                <p><strong>Vaccines will not cause the diseases they are designed to prevent</strong>
+                    <br>
+                    Vaccines contain either killed or weakened viruses, making it impossible to get the disease from the
+                    vaccine.
+                </p>
+            </li>
+
+            <li>
+                <p><strong>Young and healthy people can get very sick, too</strong>
+                    <br>
+                    Infants and older adults are at increased risk for serious infections and complications, but
+                    vaccine-preventable diseases can strike anyone. If you are young and healthy, getting vaccinated can
+                    help you stay that way.
+                </p>
+            </li>
+
+            <li>
+                <p><strong>Vaccine-preventable diseases are expensive</strong>
+                    <br>
+                    Diseases not only have a direct impact on individuals and their families, but also carry a high
+                    price tag for society as a whole, exceeding $10 billion per year. An average flu illness can last up
+                    to 15 days, typically with five or six missed work or school days. Adults who get hepatitis A lose
+                    an average of one month of work.</p>
+            </li>
+
+            <li>
+                <p><strong>When you get sick, your children, grandchildren, and parents may be at risk, too</strong>
+                    <br>
+                    Adults are the most common source of pertussis (whooping cough) infection in infants which can be
+                    deadly for babies. When you get vaccinated, you are protecting yourself and your family as well as
+                    those in your community who may not be able to be vaccinated.</p>
+            </li>
+
+            <li>
+                <p><strong>Your family and co-workers need you</strong>
+                    <br>
+                    In the US each year, millions of adults get sick from vaccine-preventable diseases, causing them to
+                    miss work and leaving them unable to care for those who depend on them, including their children
+                    and/or aging parents.</p>
+            </li>
+        </ol>
+    </div>
+    <div class="container-fluid text-center"
+        style="height: auto; background-color: rgb(20, 20, 71); margin-top: 10px;color: white;">
+        <div class="row">
+            <div class="col-sm-6" style="padding:15px;">For Grievances & Feedback</div>
+            <div class="col-sm-6" style="padding:15px;">Copyright © 2021 COWIN. All Rights Reserved</div>
+        </div>
+    </div>
+</body>
+
+</html>
