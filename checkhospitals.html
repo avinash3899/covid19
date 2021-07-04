@@ -5,8 +5,30 @@
     <title>Check available Doctors</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        #hd1 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          color: tomato;
+          background-color: white;
+          font-size: 50px;
+          margin: 0;
+          border-radius: 10px 10px 0px 0px;
+        }
+      
+        @media only screen and (max-width: 600px) {
+          #hd1 {
+            position: static;
+            width: 100%;
+      
+          }
+      
+        }
+      </style>
 </head>
 
 <body>
@@ -30,9 +52,12 @@
             </ul>
         </div>
     </nav>
-    <img class="img-responsive" src="images/doctors.jpg" alt="doctors" width="100%" style="margin-bottom: 20px;">
-
-    <table class="table table-hover text-center">
+    <div class="container-fluid"
+    style="position: relative;background-color: rgb(195, 191, 191);padding: 0;margin-bottom: 10px;">
+    <img class="img-responsive" src="images/doctors.jpg" alt="amb" style="width: 100%;">
+    <div class="container-fluid" id="hd1">Our Heroes</div>
+  </div>
+    <table class="table table-hover">
         <tr style="font-weight: bold; font-size: 25px; color: gray;">
             <td>Name</td>
             <td>Hospital</td>

@@ -2,32 +2,171 @@
 <html lang="en">
 
 <head>
-    <title>Book an Ambulance</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
+  <title>Book an Ambulance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    #hd1 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: tomato;
+      background-color: white;
+      font-size: 50px;
+      margin: 0;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #hd1 {
+        position: static;
+        width: 100%;
+        font-size: 47px;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="home.html" target="_self">Covid Suraksha</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="about.html" target="_self">About</a></li>
-            <li><a href="self-check.html" target="_self">Self-Check</a></li>
-            <li><a href="vaccination.html" target="_self">Get Vaccinated</a></li>
-            <li><a href="checkhospitals.html" target="_self">View Doctors</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Booking<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="bookbed.html" target="_self">Bed</a></li>
-                  <li class="active"><a href="bookambulance.html" target="_self">Ambulance</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="home.html" target="_self">Covid Suraksha</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="about.html" target="_self">About</a></li>
+        <li><a href="self-check.html" target="_self">Self-Check</a></li>
+        <li><a href="vaccination.html" target="_self">Get Vaccinated</a></li>
+        <li><a href="checkhospitals.html" target="_self">View Doctors</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Booking<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="bookbed.html" target="_self">Bed</a></li>
+            <li class="active"><a href="bookambulance.html" target="_self">Ambulance</a></li>
           </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid"
+    style="position: relative;background-color: rgb(195, 191, 191);padding: 0;margin-bottom: 10px;">
+    <img class="img-responsive" src="images/ambulance.png" alt="amb" />
+    <div class="container-fluid" id="hd1">Want an ambulance?</div>
+  </div>
+
+
+
+  <div class="container-fluid" style="margin:auto;border-radius: 30px; padding:30px; max-width: 1000px;">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="name">Full Name:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
         </div>
-      </nav>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="aadhar">Aadhaar Number:</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="aadhar" placeholder="Enter your aadhaar number" name="aadhar">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="age">Age:</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="age" placeholder="Enter your age" name="age">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="gender">Gender:</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="gender" id="gender">
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="frmale">Female</option>
+            <option value="nts">I prefer not to say</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="address-l1">Address Line 1:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="address-l1" placeholder="Enter Address Line 1" name="address-l1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="address-l2">Address Line 2:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="address-l2" placeholder="Enter Address Line 2" name="address-l2">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="address-l3">Address Line 3:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="address-l3" placeholder="Enter Address Line 3" name="address-l3">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="city">City:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="city" placeholder="Enter your City" name="city">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="state">Enter your State:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="state" placeholder="Enter your state" name="state">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pin">Pin Code:</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="pin" placeholder="Enter your area PIN Code" name="pin">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="type">Ambulance Size:</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="type" id="type">
+            <option value="traveller">Traveller(Most Spacious)</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="phone">Phone Number:</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="phone" placeholder="Enter your number" name="phone">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="phone">Choose Payment Method:</label>
+        <div class="col-sm-10">
+          <div class="radio">
+            <label><input type="radio" name="pay"> Net Banking &nbsp&nbsp </label>
+            <label><input type="radio" name="pay"> UPI &nbsp&nbsp </label>
+            <label><input type="radio" name="pay"> Cash &nbsp&nbsp </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Proceed</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>
